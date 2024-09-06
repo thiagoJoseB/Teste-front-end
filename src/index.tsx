@@ -22,7 +22,10 @@ import bebida from './img/whiskey.svg';
 import tecnologia from './img/monitorar-tablet-e-smartohone.svg';
 import saude from './img/cuidados-de-saude.svg';
 import CardSlider from './card';
-
+import bannerProduto from './img/produto-banner.svg';
+import bannerParceiro from './img/parceiro-banner.svg';
+import marcas from './img/marca.svg';
+import MarcasSlider from './marcas';
 
 
 const products = [
@@ -89,6 +92,10 @@ const products = [
 ];
 
 
+const images = [marcas, marcas ,marcas ,marcas, marcas , marcas, marcas];
+
+
+
 const MyComponent: React.FC = () => {
   return (
     <div className='App'>
@@ -112,10 +119,8 @@ const MyComponent: React.FC = () => {
         </div>
         <div className='centro-header'>
           <img className='logo-img' src={logo} />
-
           <input className='search' placeholder='O que você está buscando?' />
           <img className='lupa-img' src={lupa} />
-
           <img className='present-img' src={present} />
           <img className='menu-img' src={heart} />
           <img className='menu-img' src={person} />
@@ -138,52 +143,52 @@ const MyComponent: React.FC = () => {
       </header>
       <main className='main-vtex'>
         <div className='banner'>
-          <img className='banner-img' src={banner} />  
+          <img className='banner-img' src={banner} />
         </div>
         <div className='opcoes'>
-            <div className='caixa-opcoes'>
-              <div style={{ background: '#FFFFFF' }} className='caixa-img'>
-                <img className='img-opcoes' src={tecnologia} />
-              </div>
-              <label style={{ color: 'red', marginLeft: '20px' }} className='titulo-opcoes'>Tecnologia</label>
+          <div className='caixa-opcoes'>
+            <div style={{ background: '#FFFFFF' }} className='caixa-img'>
+              <img className='img-opcoes' src={tecnologia} />
             </div>
-            <div className='caixa-opcoes'>
-              <div className='caixa-img'>
-                <img className='img-opcoes' src={superMercado} />
-              </div>
-              <label style={{ marginLeft: '10px' }} className='titulo-opcoes'>Supermercado</label>
-            </div>
-            <div className='caixa-opcoes'>
-              <div className='caixa-img'>
-                <img className='img-opcoes' src={bebida} />
-              </div>
-              <label style={{ marginLeft: '32px' }} className='titulo-opcoes'>Bebidas</label>
-            </div>
-            <div className='caixa-opcoes'>
-              <div className='caixa-img'>
-                <img className='img-opcoes' src={ferramentas} />
-              </div>
-              <label style={{ marginLeft: '16px' }} className='titulo-opcoes'>Ferramentas</label>
-            </div>
-            <div className='caixa-opcoes'>
-              <div className='caixa-img'>
-                <img className='img-opcoes' src={saude} />
-              </div>
-              <label style={{ marginLeft: '40px' }} className='titulo-opcoes'>Saúde</label>
-            </div>
-            <div className='caixa-opcoes'>
-              <div className='caixa-img'>
-                <img className='img-opcoes' src={corrida} />
-              </div>
-              <label style={{ fontSize: '16px' }} className='titulo-opcoes'>Esportes e Fitnes</label>
-            </div>
-            <div className='caixa-opcoes'>
-              <div className='caixa-img'>
-                <img className='img-opcoes' src={moda} />
-              </div>
-              <label style={{ marginLeft: '40px' }} className='titulo-opcoes'>Moda</label>
-            </div>
+            <label style={{ color: 'red', marginLeft: '20px' }} className='titulo-opcoes'>Tecnologia</label>
           </div>
+          <div className='caixa-opcoes'>
+            <div className='caixa-img'>
+              <img className='img-opcoes' src={superMercado} />
+            </div>
+            <label style={{ marginLeft: '10px' }} className='titulo-opcoes'>Supermercado</label>
+          </div>
+          <div className='caixa-opcoes'>
+            <div className='caixa-img'>
+              <img className='img-opcoes' src={bebida} />
+            </div>
+            <label style={{ marginLeft: '32px' }} className='titulo-opcoes'>Bebidas</label>
+          </div>
+          <div className='caixa-opcoes'>
+            <div className='caixa-img'>
+              <img className='img-opcoes' src={ferramentas} />
+            </div>
+            <label style={{ marginLeft: '16px' }} className='titulo-opcoes'>Ferramentas</label>
+          </div>
+          <div className='caixa-opcoes'>
+            <div className='caixa-img'>
+              <img className='img-opcoes' src={saude} />
+            </div>
+            <label style={{ marginLeft: '40px' }} className='titulo-opcoes'>Saúde</label>
+          </div>
+          <div className='caixa-opcoes'>
+            <div className='caixa-img'>
+              <img className='img-opcoes' src={corrida} />
+            </div>
+            <label style={{ fontSize: '16px' }} className='titulo-opcoes'>Esportes e Fitnes</label>
+          </div>
+          <div className='caixa-opcoes'>
+            <div className='caixa-img'>
+              <img className='img-opcoes' src={moda} />
+            </div>
+            <label style={{ marginLeft: '40px' }} className='titulo-opcoes'>Moda</label>
+          </div>
+        </div>
         <div className='produtosRelacionados'>
           <div className='caixa-titulo-produto'>
           </div>
@@ -195,10 +200,40 @@ const MyComponent: React.FC = () => {
             <div className='nome-produtos'></div>
             <div className='nome-produtos'></div>
           </div>
-        </div>  
-        <div className='cardProdutos'>
-          <CardSlider cards={products}/>
         </div>
+        <div className='cardProdutos'>
+          <CardSlider cards={products} />
+        </div>
+        <div className='parceiros'>
+          <div style={{ marginLeft: '10px' }} className='cardParceiro'>
+            <img src={bannerParceiro} />
+          </div>
+          <div style={{ marginLeft: '110px' }} className='cardParceiro'>
+            <img src={bannerParceiro} />
+          </div>
+        </div>
+        <div className='tituloProdutosRelacionados'>
+
+        </div>
+
+        <div className='caixaProdutosRelacionados'>
+            <div style={{ marginLeft: '30px' }} className='cardProdutosRelacionados'>
+              <img src={bannerProduto} />
+            </div>
+            <div style={{ marginLeft: '80px' }} className='cardProdutosRelacionados'>
+            <img src={bannerProduto} />
+            </div>
+
+           
+        </div>
+
+        <div className='tituloNavegueMarcas'>
+          <h3>Navegue por marcas</h3>
+          <MarcasSlider marcas={images}/>
+
+        </div>
+
+
 
       </main>
       <footer></footer>
