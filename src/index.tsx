@@ -1,0 +1,227 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import './App.scss';
+import logo from './img/logo.svg';
+import lupa from './img/lupa.svg';
+import present from './img/present.svg';
+import heart from './img/Heart.svg';
+import car from './img/ShoppingCart.svg';
+import person from './img/UserCircle.svg';
+import truck from './img/Truck.svg';
+import check from './img/ShieldCheck.svg';
+import credit from './img/CreditCard.svg';
+import banner from './img/banner.svg';
+import moda from './img/moda.svg';
+import superMercado from './img/supermercados.svg';
+import corrida from './img/corrida.svg';
+import ferramentas from './img/ferramentas.svg';
+import bebida from './img/whiskey.svg';
+import tecnologia from './img/monitorar-tablet-e-smartohone.svg';
+import saude from './img/cuidados-de-saude.svg';
+import CardSlider from './card';
+
+
+
+const products = [
+  {
+    productName: "Iphone 11 PRO MAX BRANCO 1",
+    descriptionShort: "Iphone 11 PRO MAX BRANCO 1",
+    photo: "https://app.econverse.com.br/teste-front-end/junior/tecnologia/fotos-produtos/foto-iphone.png",
+    price: 15000
+  },
+  {
+    productName: "IPHONE 13 MINI 1",
+    descriptionShort: "IPHONE 13 MINI 1",
+    photo: "https://app.econverse.com.br/teste-front-end/junior/tecnologia/fotos-produtos/foto-iphone.png",
+    price: 9000
+  },
+  {
+    productName: "Iphone 11 PRO MAX BRANCO 2",
+    descriptionShort: "Iphone 11 PRO MAX BRANCO 2",
+    photo: "https://app.econverse.com.br/teste-front-end/junior/tecnologia/fotos-produtos/foto-iphone.png",
+    price: 14990
+  },
+  {
+    productName: "IPHONE 13 MINI 2",
+    descriptionShort: "IPHONE 13 MINI 2",
+    photo: "https://app.econverse.com.br/teste-front-end/junior/tecnologia/fotos-produtos/foto-iphone.png",
+    price: 12000
+  },
+  {
+    productName: "Iphone 11 PRO MAX BRANCO 3",
+    descriptionShort: "Iphone 11 PRO MAX BRANCO 3",
+    photo: "https://app.econverse.com.br/teste-front-end/junior/tecnologia/fotos-produtos/foto-iphone.png",
+    price: 4550
+  },
+  {
+    productName: "IPHONE 13 MINI 3",
+    descriptionShort: "IPHONE 13 MINI 3",
+    photo: "https://app.econverse.com.br/teste-front-end/junior/tecnologia/fotos-produtos/foto-iphone.png",
+    price: 38000
+  },
+  {
+    productName: "Iphone 11 PRO MAX BRANCO 4",
+    descriptionShort: "Iphone 11 PRO MAX BRANCO 4",
+    photo: "https://app.econverse.com.br/teste-front-end/junior/tecnologia/fotos-produtos/foto-iphone.png",
+    price: 42000
+  },
+  {
+    productName: "IPHONE 13 MINI 4",
+    descriptionShort: "IPHONE 13 MINI 4",
+    photo: "https://app.econverse.com.br/teste-front-end/junior/tecnologia/fotos-produtos/foto-iphone.png",
+    price: 520
+  },
+  {
+    productName: "Iphone 11 PRO MAX BRANCO 5",
+    descriptionShort: "Iphone 11 PRO MAX BRANCO 5",
+    photo: "https://app.econverse.com.br/teste-front-end/junior/tecnologia/fotos-produtos/foto-iphone.png",
+    price: 149990
+  },
+  {
+    productName: "IPHONE 13 MINI 5",
+    descriptionShort: "IPHONE 13 MINI 5",
+    photo: "https://app.econverse.com.br/teste-front-end/junior/tecnologia/fotos-produtos/foto-iphone.png",
+    price: 100000
+  }
+];
+
+
+const MyComponent: React.FC = () => {
+  return (
+    <div className='App'>
+      <header className='header-vtex'>
+        <div className='topo'>
+          <ol>
+            <li>
+              <img className='img-topo' src={truck} />
+              <label>Compra 100% segura</label></li>
+
+            <li>
+              <img className='img-topo' src={check} />
+              <label> Frete grátis acima de R$ 200</label>
+            </li>
+            <li>
+              <img className='img-topo' src={credit} />
+              <label>Parcele suas compras</label>
+            </li>
+          </ol>
+
+        </div>
+        <div className='centro-header'>
+          <img className='logo-img' src={logo} />
+
+          <input className='search' placeholder='O que você está buscando?' />
+          <img className='lupa-img' src={lupa} />
+
+          <img className='present-img' src={present} />
+          <img className='menu-img' src={heart} />
+          <img className='menu-img' src={person} />
+          <img className='menu-img' src={car} />
+
+        </div>
+        <nav className='menu'>
+          <ol>
+            <li>Todas Categorias</li>
+            <li>Supermercado</li>
+            <li>Livros</li>
+            <li>Moda</li>
+            <li>Lançamentos</li>
+            <li style={{ color: '#F71963' }}>Ofertas do dia</li>
+            <li>Assinatura</li>
+          </ol>
+
+        </nav>
+
+      </header>
+      <main className='main-vtex'>
+        <div className='banner'>
+          <img className='banner-img' src={banner} />  
+        </div>
+        <div className='opcoes'>
+            <div className='caixa-opcoes'>
+              <div style={{ background: '#FFFFFF' }} className='caixa-img'>
+                <img className='img-opcoes' src={tecnologia} />
+              </div>
+              <label style={{ color: 'red', marginLeft: '20px' }} className='titulo-opcoes'>Tecnologia</label>
+            </div>
+            <div className='caixa-opcoes'>
+              <div className='caixa-img'>
+                <img className='img-opcoes' src={superMercado} />
+              </div>
+              <label style={{ marginLeft: '10px' }} className='titulo-opcoes'>Supermercado</label>
+            </div>
+            <div className='caixa-opcoes'>
+              <div className='caixa-img'>
+                <img className='img-opcoes' src={bebida} />
+              </div>
+              <label style={{ marginLeft: '32px' }} className='titulo-opcoes'>Bebidas</label>
+            </div>
+            <div className='caixa-opcoes'>
+              <div className='caixa-img'>
+                <img className='img-opcoes' src={ferramentas} />
+              </div>
+              <label style={{ marginLeft: '16px' }} className='titulo-opcoes'>Ferramentas</label>
+            </div>
+            <div className='caixa-opcoes'>
+              <div className='caixa-img'>
+                <img className='img-opcoes' src={saude} />
+              </div>
+              <label style={{ marginLeft: '40px' }} className='titulo-opcoes'>Saúde</label>
+            </div>
+            <div className='caixa-opcoes'>
+              <div className='caixa-img'>
+                <img className='img-opcoes' src={corrida} />
+              </div>
+              <label style={{ fontSize: '16px' }} className='titulo-opcoes'>Esportes e Fitnes</label>
+            </div>
+            <div className='caixa-opcoes'>
+              <div className='caixa-img'>
+                <img className='img-opcoes' src={moda} />
+              </div>
+              <label style={{ marginLeft: '40px' }} className='titulo-opcoes'>Moda</label>
+            </div>
+          </div>
+        <div className='produtosRelacionados'>
+          <div className='caixa-titulo-produto'>
+          </div>
+          <div className='caixa-produtos'>
+            <div className='nome-produtos'></div>
+            <div className='nome-produtos'></div>
+            <div className='nome-produtos'></div>
+            <div className='nome-produtos'></div>
+            <div className='nome-produtos'></div>
+            <div className='nome-produtos'></div>
+          </div>
+        </div>  
+        <div className='cardProdutos'>
+          <CardSlider cards={products}/>
+        </div>
+
+      </main>
+      <footer></footer>
+    </div>
+
+
+
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root')!);
+root.render(
+  <React.StrictMode>
+    <MyComponent />
+  </React.StrictMode>
+
+);
+
+
+
+
+
+
+reportWebVitals();
+
+

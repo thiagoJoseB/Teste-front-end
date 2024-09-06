@@ -1,0 +1,319 @@
+
+.App{
+    ////muda o tamanho depois
+    width: 1440px;
+    height: 3202px;
+    background-color: #FFFFFF;
+   
+    .header-vtex{
+        height: 144px;
+        width: 1280px;
+       margin: auto;
+        
+
+        .topo{
+            height:40px;
+            width: 100%;
+            background-color: white;
+            
+            ol{
+                list-style-type: none;
+                padding-top: 5px;
+                margin: 0;
+               
+            }
+
+            ol li{
+              
+                display: inline;
+                margin-left: 166px;
+                color: #9F9F9F;
+                size:20px;
+              
+                
+            }
+
+            .img-topo{
+                width: 20px;
+                height: 20px;
+                
+            
+               
+            }
+
+            
+
+        }
+
+        .centro-header{
+            height:64px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+
+            .logo-img{
+                width: 139px;
+                height: 50.64px;
+                margin-left: 40px;
+                margin-top: 8px;
+                cursor: pointer;
+
+            }
+
+            .search{
+                width: 657px;
+                height: 48px;
+                border-radius: 10px;
+                margin-left: 120px;
+                background-color: #F6F5F2;
+                border: 1px solid #F6F5F2 ;
+                margin-top: 5px;
+                cursor: pointer;
+
+            }
+
+            .lupa-img{
+              width: 28px;
+              height: 28px;
+              margin-left: -50px;
+              margin-top: 15px;
+              cursor: pointer;
+
+
+            }
+
+            .present-img{
+                width: 24px;
+                height: 24px;
+                margin-left: 90px;
+                margin-top: 18px;
+                cursor: pointer;
+            }
+
+            .menu-img{
+                width: 32px;
+                height: 32px;
+                margin-top: 15px;
+                margin-left: 18px;
+                cursor: pointer;
+            }
+
+            
+        
+
+        }
+
+        .menu{
+            height:40px;
+            width: 100%;
+            background-color: white;
+        
+
+            ol{
+                list-style-type: none;
+                padding-top: 5px;
+                margin: 0;
+               
+            }
+
+            ol li{
+                display: inline;
+                margin-left: 85px;
+                color: #9F9F9F;
+                size:18px;
+                cursor: pointer;
+              
+                
+            }
+
+           
+
+        }
+
+      
+    }
+
+    .main-vtex{
+    ////muda o tamanho depois
+      width: 1443px;
+      height: 3202px;
+      background-color: #FFFFFF;
+
+        .banner-img{
+            width: 1443px;
+            height: 395px;
+            cursor: pointer;
+        }
+
+
+        .opcoes{
+            width: 1277px;
+            height: 174px;
+            margin: auto;
+            display: flex;
+            margin-top: 34px;
+
+            .caixa-opcoes{
+                width: 128px;
+                height: 175px;
+                background-color: white;
+                margin-left: 47px;
+
+
+                .caixa-img{
+                    width: 128px;
+                    height: 128px;
+                    background-color:#F4F4F4;
+                    border-radius: 10px;
+                    border: solid 1px #00000021;
+                    cursor: pointer;
+
+                }
+
+                
+                .titulo-opcoes{
+                    color: #4E4E4E;
+                    font-size: 16px; /* Use 'font-size' em vez de 'size' */
+                    font-family: Poppins, sans-serif;
+                    font-weight: 500;
+                    text-align: center;
+                    cursor: pointer;
+                }
+
+                .img-opcoes{
+                    width: 61px;
+                    height: 63px;
+                    margin-top: 31px;
+                    margin-left: 35px;
+                    
+                }
+
+                
+            }
+        }
+
+        .produtosRelacionados{
+            width: 1264px;
+            height: 86px;
+            
+            margin-top: 39px;
+            margin: auto;
+
+            .caixa-titulo-produto{
+                width: 1264px;
+                height: 49px;
+                background-color: white;
+            }
+
+            .caixa-produtos{
+                width: 1264px;
+                height: 37px;
+                display: flex;
+
+
+                .nome-produtos{
+                    width: 210.6666666667px;
+                    height: 37px;
+                    border:1px solid black;     
+                }
+
+            }
+
+        }
+
+        .cardProdutos{
+            width: 1266px;
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            cursor: pointer;
+            
+        }
+
+       
+
+    }
+
+    .card-slider {
+        
+        gap: 20px;
+        overflow-x: auto; /* Permite a rolagem horizontal */
+        scroll-snap-type: x mandatory; /* Suaviza o scroll */
+      
+      }
+      
+      .card {
+        background-color: white;
+        border: 1px solid #00000038;
+        border-radius: 10px;
+        padding: 10px;
+        
+        
+        
+      
+        
+      
+        img {
+          width: 247px;
+          height: 228px;
+          margin: auto;
+          
+        }
+      
+        h3 {
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            text-align: left;
+            
+        }
+      
+        p {
+            font-family: Poppins;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 22.5px;
+            text-align: left;
+            
+        }
+
+      }
+      .btn-comprar{
+        width: 245px;
+        height: 44px;
+        background-color: #F71963;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: auto;
+
+        p{
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 700;
+           padding-top: 10px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+       
+      }
+
+      .card-slider-container {
+        position: relative;
+      }
+      
+     
+      
+     
+      
+   
+
+     
+
+
+     
+
+   
+
+}
