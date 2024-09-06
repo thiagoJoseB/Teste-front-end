@@ -64,7 +64,7 @@ const CardSlider: React.FC<CardSliderProps> = ({ cards }) =>{
         <div className="card-slider-container">
         <Slider {...settings}>
           {cards.map((card, index) => (
-            <div className="card" key={index}>
+            <div className="card" key={index}  onClick={() => openModal(card)}>
               <img src={card.photo}/>
               <p>{card.productName}</p>
               <p>{card.descriptionShort}</p>
