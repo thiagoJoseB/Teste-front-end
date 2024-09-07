@@ -12,7 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Acesse o diretorio 
 cd TESTE-FRONT-END
 
-## Installe dependencias 
+## Instale as dependências: 
 npm install
 
 ## Inicie o projeto:
