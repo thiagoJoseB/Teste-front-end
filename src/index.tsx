@@ -29,6 +29,7 @@ import MarcasSlider from './marcas';
 import FormasPagamento from './img/formas_pagamento.svg';
 import redesSocias from './img/redesSocias.svg';
 import rodaPe from './img/rodape.svg';
+import coroa from './img/CrownSimple.svg';
 const products = [
   {
     productName: "Iphone 11 PRO MAX BRANCO 1",
@@ -116,8 +117,10 @@ const MyComponent: React.FC = () => {
               <label>Parcele suas compras</label>
             </li>
           </ol>
-
+          <div className="linhaCustomizada"></div>
         </div>
+       
+
         <div className='centro-header'>
           <img className='logo-img' src={logo} />
           <input className='search' placeholder='O que você está buscando?' />
@@ -128,6 +131,8 @@ const MyComponent: React.FC = () => {
           <img className='menu-img' src={car} />
 
         </div>
+        <div className="linhaComLados"></div>
+
         <nav className='menu'>
           <ol>
             <li>Todas Categorias</li>
@@ -136,7 +141,7 @@ const MyComponent: React.FC = () => {
             <li>Moda</li>
             <li>Lançamentos</li>
             <li style={{ color: '#F71963' }}>Ofertas do dia</li>
-            <li>Assinatura</li>
+            <li><img src={coroa}/> Assinatura</li>
           </ol>
 
         </nav>
@@ -190,6 +195,14 @@ const MyComponent: React.FC = () => {
             <label style={{ marginLeft: '40px' }} className='titulo-opcoes'>Moda</label>
           </div>
         </div>
+        <div className='tituloProdutosRelacionados'>
+            <div className="conteudoSuperior">
+                <div className="linha"></div>
+                  <span className="texto">Produtos relacionados</span>
+                  <div className="linha"></div>
+                  </div>
+        </div>
+
         <div className='produtosRelacionados'>
           <div className='caixa-titulo-produto'>
           </div>
@@ -226,10 +239,13 @@ const MyComponent: React.FC = () => {
             <img src={bannerParceiro} />
           </div>
         </div>
-        <div className='tituloProdutosRelacionados'>
-            <div className="linha"></div>
-           <span className="texto">Produtos relacionados</span>
-            <div className="linha"></div>
+        <div className='tituloProdutosRelacionados2'>
+            <div className="conteudoSuperior">
+                <div className="linha"></div>
+                  <span className="texto">Produtos relacionados</span>
+                  <div className="linha"></div>
+                  </div>
+                <span className="verTodos" style={{cursor:'pointer'}}>Ver todos</span>
         </div>
 
         <div className='caixaProdutosRelacionados'>
@@ -280,7 +296,7 @@ const MyComponent: React.FC = () => {
 
           <div className='formasPagamento'>
             <h3>FORMAS DE PAGAMENTO</h3>
-            <img src={FormasPagamento}/>
+            <img style={{cursor: 'pointer'}} src={FormasPagamento}/>
 
           </div>
           <div className='caixaFaleConosco'>
@@ -295,9 +311,12 @@ const MyComponent: React.FC = () => {
 
 
           </div>
-
+         
         </div>
+        <div className='linha'></div>
+        
         <div className='rodaPe'>
+          
           <div className='texto'>
             <p>Copyright © 2019. Todos os direitos reservados. Todas as marcas e suas imagens são de propriedade de seus respectivos donos.  
             É vedada a reprodução, total ou parcial, de qualquer conteúdo sem expressa autorização.</p>

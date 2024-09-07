@@ -1,7 +1,7 @@
 .App {
 
     width: 1440px;
-    height: 3040px;
+    height: 3102px;
     background-color: white;
     font-family: 'Poppins', sans-serif;
 
@@ -16,6 +16,16 @@
             width: 100%;
             background-color: white;
 
+            .linhaCustomizada {
+                width: 1280px;
+                height: 1px;
+                
+                border-top: 1px solid #DEDEDE;
+                margin-top: 7px;
+    
+              }
+              
+
             ol {
                 list-style-type: none;
                 padding-top: 5px;
@@ -29,13 +39,15 @@
                 margin-left: 166px;
                 color: #9F9F9F;
                 size: 20px;
+                cursor: pointer;
 
 
             }
 
             .img-topo {
                 width: 20px;
-                height: 20px;
+                height: 14px;
+              
 
 
 
@@ -103,12 +115,29 @@
 
         }
 
+        .linhaComLados {
+            width: 1280px;
+            height: 1px;
+            background-color: #DEDEDE;
+            position: relative;
+            border-left: 1px solid #DEDEDE;
+            border-right: 1px solid #DEDEDE;
+           
+          }
+          
+
         .menu {
             height: 40px;
             width: 1280px;
             background-color: white;
             margin-top: 1px;
+            display: flex;
 
+            img{
+                width: 20px;
+                height: 14px;
+
+            }
 
             ol {
                 list-style-type: none;
@@ -191,13 +220,54 @@
 
             }
         }
+        .tituloProdutosRelacionados {
+            width: 1138px;
+            height: 72px;
+            margin-top: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; 
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0; 
+    
+    
+            .texto {
+                color: #F71963;
+                text-align: center;
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                font-weight: 700;
+    
+    
+              }
+              .conteudoSuperior {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px; 
+    
+                .linha {
+                    width: 360px;
+                    height: 0px;
+                    border: 1px solid #DEDEDE;
+                  }
+              }
+    
+        }
 
         .produtosRelacionados {
             width: 1264px;
             height: 86px;
 
-            margin-top: 39px;
-            margin: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -75px;
+
 
             .caixa-titulo-produto {
                 width: 1264px;
@@ -225,6 +295,7 @@
                         text-align: center;
                         color: #3B3B3B;
                          margin-top: 10px;
+                         cursor: pointer;
                         
                     }
                 }
@@ -335,7 +406,7 @@
         }
     }
 
-    .tituloProdutosRelacionados {
+    .tituloProdutosRelacionados2 {
         width: 1138px;
         height: 72px;
         margin-top: 50px;
@@ -345,6 +416,10 @@
         justify-content: center;
         align-items: center;
         gap: 10px; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0; 
 
 
         .texto {
@@ -356,13 +431,26 @@
 
 
           }
-          
-          .linha {
-            width: 360px;
-            height: 0px;
-            border: 1px solid #DEDEDE;
-          }
+          .conteudoSuperior {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; 
 
+            .linha {
+                width: 360px;
+                height: 0px;
+                border: 1px solid #DEDEDE;
+              }
+          }
+                    
+          
+           span{
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            
+           }
 
     }
 
@@ -372,7 +460,7 @@
         width: 1300px;
         height: 310px;
         display: flex;
-        margin-top: 61px;
+        margin-top: 46px;
         margin-left: auto;
         margin-right: auto;
 
@@ -402,7 +490,7 @@
         width: 1250px;
         height: 331px;
 
-        margin-top: 65px;
+        margin-top: 26px;
         margin-left: auto;
         margin-right: auto;
 
@@ -429,6 +517,7 @@
         width: 1442px;
         height: 395px;
         background-color: #2A2A2A;
+        margin-top: 80px;
 
         .footerConteudo {
             width: 1442px;
@@ -471,6 +560,7 @@
                         line-height: 32px;
                         text-align: left;
                         color: #FFFFFF;
+                        cursor: pointer;
 
 
 
@@ -480,6 +570,7 @@
 
                 img {
                     margin-top: 40px;
+                    cursor: pointer;
                 }
 
 
@@ -513,6 +604,7 @@
                         line-height: 32px;
                         text-align: left;
                         color: #FFFFFF;
+                        cursor: pointer;
 
 
 
@@ -528,6 +620,7 @@
             .formasPagamento {
                 width: 195px;
                 height: 192px;
+                
 
                 h3 {
                     font-family: 'Poppins', sans-serif;
@@ -553,6 +646,7 @@
             background-color: #F4F4F4;
             margin-left: 140px;
             border-radius: 10px;
+           
 
 
             p {
@@ -609,6 +703,7 @@
                 height: 45px;
                 border-radius: 4px;
                 background-color: #F71963;
+                cursor: pointer;
 
 
                 p {
@@ -622,6 +717,16 @@
 
                 }
             }
+
+          
+        }
+
+        .linha{
+            width: 1442px;
+            height: 1.5px;
+            background-color: white;
+            
+
         }
 
         .rodaPe {
@@ -630,6 +735,10 @@
             font-family: 'Poppins', sans-serif;
             display: flex;
             background-color: #2A2A2A;
+
+          
+            
+            
 
 
 
@@ -663,6 +772,7 @@
                 height: 32px;
                 margin-left: 250px;
                 margin-top: 20px;
+                cursor: pointer;
 
 
             }
