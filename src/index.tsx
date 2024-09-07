@@ -194,12 +194,25 @@ const MyComponent: React.FC = () => {
           <div className='caixa-titulo-produto'>
           </div>
           <div className='caixa-produtos'>
-            <div className='nome-produtos'></div>
-            <div className='nome-produtos'></div>
-            <div className='nome-produtos'></div>
-            <div className='nome-produtos'></div>
-            <div className='nome-produtos'></div>
-            <div className='nome-produtos'></div>
+            <div className='nome-produtos'>
+               <p style={{color:'#F71963'}}>CELULAR</p>
+            </div>
+            <div className='nome-produtos'>
+               <p>ACESSÓRIOS</p>
+            </div>
+            <div className='nome-produtos'>
+               <p>TABLETS</p>
+            </div>
+            <div className='nome-produtos'>
+               <p>NOTEBOOKS</p>
+            </div>
+            <div className='nome-produtos'>
+               <p>TVS</p>
+            </div>
+            <div className='nome-produtos'>
+               <p>VER TODOS</p>
+                
+            </div>
           </div>
         </div>
         <div className='cardProdutos'>
@@ -214,7 +227,9 @@ const MyComponent: React.FC = () => {
           </div>
         </div>
         <div className='tituloProdutosRelacionados'>
-
+            <div className="linha"></div>
+           <span className="texto">Produtos relacionados</span>
+            <div className="linha"></div>
         </div>
 
         <div className='caixaProdutosRelacionados'>
