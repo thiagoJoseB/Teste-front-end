@@ -8,6 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [TypeScript](https://www.typescriptlang.org/) - Superset de JavaScript que adiciona tipagem estática.
 - [Slick Carousel](https://react-slick.neostack.com/) - Componente de carrossel deslizante para React.
 
+## Git Clone 
+git clone https://github.com/thiagoJoseB/Teste-front-end 
 
 ## Acesse o diretorio 
 cd TESTE-FRONT-END
