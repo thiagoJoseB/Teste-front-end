@@ -1,57 +1,57 @@
+.App {
 
-.App{
-    ////muda o tamanho depois
     width: 1440px;
-    height: 3202px;
-    background-color: #FFFFFF;
-   
-    .header-vtex{
+    height: 3040px;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+
+    .header-vtex {
         height: 144px;
         width: 1280px;
-       margin: auto;
-        
+        margin: auto;
 
-        .topo{
-            height:40px;
+
+        .topo {
+            height: 40px;
             width: 100%;
             background-color: white;
-            
-            ol{
+
+            ol {
                 list-style-type: none;
                 padding-top: 5px;
                 margin: 0;
-               
+
             }
 
-            ol li{
-              
+            ol li {
+
                 display: inline;
                 margin-left: 166px;
                 color: #9F9F9F;
-                size:20px;
-              
-                
+                size: 20px;
+
+
             }
 
-            .img-topo{
+            .img-topo {
                 width: 20px;
                 height: 20px;
-                
-            
-               
+
+
+
             }
 
-            
+
 
         }
 
-        .centro-header{
-            height:64px;
+        .centro-header {
+            height: 64px;
             width: 100%;
             background-color: white;
             display: flex;
 
-            .logo-img{
+            .logo-img {
                 width: 139px;
                 height: 50.64px;
                 margin-left: 40px;
@@ -60,29 +60,29 @@
 
             }
 
-            .search{
+            .search {
                 width: 657px;
                 height: 48px;
                 border-radius: 10px;
                 margin-left: 120px;
                 background-color: #F6F5F2;
-                border: 1px solid #F6F5F2 ;
+                border: 1px solid #F6F5F2;
                 margin-top: 5px;
                 cursor: pointer;
 
             }
 
-            .lupa-img{
-              width: 28px;
-              height: 28px;
-              margin-left: -50px;
-              margin-top: 15px;
-              cursor: pointer;
+            .lupa-img {
+                width: 28px;
+                height: 28px;
+                margin-left: -50px;
+                margin-top: 15px;
+                cursor: pointer;
 
 
             }
 
-            .present-img{
+            .present-img {
                 width: 24px;
                 height: 24px;
                 margin-left: 90px;
@@ -90,7 +90,7 @@
                 cursor: pointer;
             }
 
-            .menu-img{
+            .menu-img {
                 width: 32px;
                 height: 32px;
                 margin-top: 15px;
@@ -98,192 +98,194 @@
                 cursor: pointer;
             }
 
-            
-        
+
+
 
         }
 
-        .menu{
-            height:40px;
-            width: 100%;
+        .menu {
+            height: 40px;
+            width: 1280px;
             background-color: white;
-        
+            margin-top: 1px;
 
-            ol{
+
+            ol {
                 list-style-type: none;
                 padding-top: 5px;
                 margin: 0;
-               
+
             }
 
-            ol li{
+            ol li {
                 display: inline;
                 margin-left: 85px;
                 color: #9F9F9F;
-                size:18px;
+                size: 18px;
                 cursor: pointer;
-              
-                
+
+
             }
 
-           
+
 
         }
 
-      
+
     }
 
-    .main-vtex{
-    ////muda o tamanho depois
-      width: 1443px;
-      height: 3202px;
-      background-color: #FFFFFF;
+    .main-vtex {
+        width: 1443px;
+        height: 2500px;
+        background-color: #FFFFFF;
 
-        .banner-img{
+        .banner-img {
             width: 1443px;
             height: 395px;
             cursor: pointer;
         }
 
 
-        .opcoes{
+        .opcoes {
             width: 1277px;
             height: 174px;
             margin: auto;
             display: flex;
             margin-top: 34px;
 
-            .caixa-opcoes{
+            .caixa-opcoes {
                 width: 128px;
                 height: 175px;
                 background-color: white;
                 margin-left: 47px;
 
 
-                .caixa-img{
+                .caixa-img {
                     width: 128px;
                     height: 128px;
-                    background-color:#F4F4F4;
+                    background-color: #F4F4F4;
                     border-radius: 10px;
                     border: solid 1px #00000021;
                     cursor: pointer;
 
                 }
 
-                
-                .titulo-opcoes{
+
+                .titulo-opcoes {
                     color: #4E4E4E;
-                    font-size: 16px; /* Use 'font-size' em vez de 'size' */
+                    font-size: 16px;
+                    /* Use 'font-size' em vez de 'size' */
                     font-family: Poppins, sans-serif;
                     font-weight: 500;
                     text-align: center;
                     cursor: pointer;
                 }
 
-                .img-opcoes{
+                .img-opcoes {
                     width: 61px;
                     height: 63px;
                     margin-top: 31px;
                     margin-left: 35px;
-                    
+
                 }
 
-                
+
             }
         }
 
-        .produtosRelacionados{
+        .produtosRelacionados {
             width: 1264px;
             height: 86px;
-            
+
             margin-top: 39px;
             margin: auto;
 
-            .caixa-titulo-produto{
+            .caixa-titulo-produto {
                 width: 1264px;
                 height: 49px;
                 background-color: white;
             }
 
-            .caixa-produtos{
+            .caixa-produtos {
                 width: 1264px;
                 height: 37px;
                 display: flex;
 
 
-                .nome-produtos{
+                .nome-produtos {
                     width: 210.6666666667px;
                     height: 37px;
-                    border:1px solid black;     
+                    border: 1px solid black;
                 }
 
             }
 
         }
 
-        .cardProdutos{
+        .cardProdutos {
             width: 1266px;
             height: 500px;
             margin-left: auto;
             margin-right: auto;
             margin-top: 20px;
             cursor: pointer;
-            
+
         }
 
 
 
 
-       
+
 
     }
 
     .card-slider {
-        
+
         gap: 20px;
-        overflow-x: auto; /* Permite a rolagem horizontal */
-        scroll-snap-type: x mandatory; /* Suaviza o scroll */
-      
-      }
-      
-      .card {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+
+    }
+
+    .card {
         background-color: white;
         border: 1px solid #00000038;
         border-radius: 10px;
         padding: 10px;
-        
-        
-        
-      
-        
-      
+
+
+
+
+
+
         img {
-          width: 247px;
-          height: 228px;
-          margin: auto;
-          
+            width: 247px;
+            height: 228px;
+            margin: auto;
+
         }
-      
+
         h3 {
-            font-family: Poppins;
+            font-family: 'Poppins', sans-serif;
             font-size: 20px;
             font-weight: 700;
             line-height: 30px;
             text-align: left;
-            
+
         }
-      
+
         p {
-            font-family: Poppins;
+            font-family: 'Poppins', sans-serif;
             font-size: 15px;
             font-weight: 300;
             line-height: 22.5px;
             text-align: left;
-            
+
         }
 
-      }
-      .btn-comprar{
+    }
+
+    .btn-comprar {
         width: 245px;
         height: 44px;
         background-color: #F71963;
@@ -291,121 +293,353 @@
         cursor: pointer;
         margin: auto;
 
-        p{
-            font-family: Poppins;
+        p {
+            font-family: 'Poppins', sans-serif;
             font-size: 14px;
             font-weight: 700;
-           padding-top: 10px;
+            padding-top: 10px;
             text-align: center;
             color: #FFFFFF;
         }
-       
-      }
 
-      .card-slider-container {
+    }
+
+    .card-slider-container {
         position: relative;
-      }
+    }
 
-     .parceiros{
+    .parceiros {
         width: 1266px;
         height: 350px;
-        margin-top:71px;
+        margin-top: 71px;
         margin: auto;
         display: flex;
 
 
-        .cardParceiro{
+        .cardParceiro {
             width: 574px;
             height: 350px;
             cursor: pointer;
             border-radius: 10px;
         }
-     }
+    }
 
-     .tituloProdutosRelacionados{
+    .tituloProdutosRelacionados {
         width: 1138px;
         height: 72px;
         background-color: black;
         margin-top: 60px;
         margin-left: auto;
         margin-right: auto;
-        
-        
+
+
     }
 
 
-    
-    .caixaProdutosRelacionados{
+
+    .caixaProdutosRelacionados {
         width: 1300px;
         height: 310px;
         display: flex;
         margin-top: 71px;
         margin-left: auto;
         margin-right: auto;
-        
-    
-        
-       
-      .cardProdutosRelacionados{
-        width: 589.73px;
-        height: 284px;
-        border-radius: 10px;
 
 
-        img{
+
+
+        .cardProdutosRelacionados {
             width: 589.73px;
             height: 284px;
             border-radius: 10px;
-            cursor: pointer;
+
+
+            img {
+                width: 589.73px;
+                height: 284px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
         }
-      }
 
 
 
-        
-     }
 
-     .tituloNavegueMarcas{
+    }
+
+    .tituloNavegueMarcas {
         width: 1250px;
         height: 331px;
-        
-        margin-top: 78px;
+
+        margin-top: 65px;
         margin-left: auto;
         margin-right: auto;
 
-        h3{
-            font-family: Poppins;
+        h3 {
+            font-family: 'Poppins', sans-serif;
             font-size: 30px;
             font-weight: 700;
             line-height: 45px;
             text-align: center;
             color: #F71963;
-         
-            
+
+
 
         }
 
-     
-        
-        
-        
+
+
+
+
     }
 
 
+    .footer {
+        width: 1442px;
+        height: 395px;
+        background-color: #2A2A2A;
+
+        .footerConteudo {
+            width: 1442px;
+            height: 325px;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 60px;
 
 
-      
-     
-      
-     
-      
-   
-
-     
+            .sobreNos {
+                width: 149px;
+                height: 224px;
+                margin-left: 150px;
 
 
-     
 
-   
+                h2 {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 12px;
+                    font-weight: 300;
+                    text-align: left;
+                    color: #FFFFFF;
+
+                }
+
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        font-size: 14px;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 12px;
+                        font-weight: 300;
+                        line-height: 32px;
+                        text-align: left;
+                        color: #FFFFFF;
+
+
+
+                    }
+                }
+
+
+                img {
+                    margin-top: 40px;
+                }
+
+
+            }
+
+            .informacoesUteis {
+                width: 150px;
+                height: 236px;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+
+                h2 {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 12px;
+                    font-weight: 300;
+                    text-align: left;
+                    color: #FFFFFF;
+
+                }
+
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        font-size: 14px;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 12px;
+                        font-weight: 300;
+                        line-height: 32px;
+                        text-align: left;
+                        color: #FFFFFF;
+
+
+
+                    }
+                }
+
+
+
+            }
+
+
+
+            .formasPagamento {
+                width: 195px;
+                height: 192px;
+
+                h3 {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 13px;
+                    font-weight: 700;
+                    text-align: left;
+                    color: #FFFFFF;
+
+
+                }
+
+
+
+            }
+
+
+
+        }
+
+        .caixaFaleConosco {
+            width: 380px;
+            height: 260px;
+            background-color: #F4F4F4;
+            margin-left: 140px;
+            border-radius: 10px;
+
+
+            p {
+                font-size: 18px;
+                font-weight: 300;
+                text-align: center;
+                text-transform: uppercase;
+                margin-top: 40px;
+
+
+
+            }
+
+            h3 {
+                font-size: 18px;
+                text-align: center;
+                text-transform: uppercase;
+                margin-top: -17px;
+
+            }
+
+            label {
+                font-size: 12px;
+                font-weight: 300;
+                margin-left: 20px;
+                text-transform: uppercase;
+
+
+            }
+
+
+            .caixaInput {
+                width: 292px;
+                margin-left: auto;
+                margin-right: auto;
+                gap: 10px;
+                display: flex;
+                margin-top: 17px;
+
+            }
+
+            .input-novidades {
+                width: 230px;
+                height: 45px;
+                border-radius: 4px;
+                border: 1px solid #2A2A2A;
+                opacity: 0px;
+                padding-left: 10px;
+
+            }
+
+            .btnOK {
+                width: 62px;
+                height: 45px;
+                border-radius: 4px;
+                background-color: #F71963;
+
+
+                p {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-align: center;
+                    color: white;
+                    margin-top: 14px;
+
+
+                }
+            }
+        }
+
+        .rodaPe {
+            width: 1442px;
+            height: 70px;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            background-color: #2A2A2A;
+
+
+
+            .texto {
+                width: 698px;
+                height: 26px;
+                margin-left: 150px;
+                margin-top: 15px;
+
+
+
+
+                p {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 10px;
+                    font-weight: 400;
+                    line-height: 13px;
+                    text-align: left;
+                    color: #FFFFFF;
+
+
+
+                }
+
+
+
+            }
+
+            .logoRodaPe {
+                width: 226.08px;
+                height: 32px;
+                margin-left: 250px;
+                margin-top: 20px;
+
+
+            }
+
+
+        }
+
+
+    }
 
 }

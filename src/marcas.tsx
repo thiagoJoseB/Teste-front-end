@@ -25,7 +25,8 @@ const MarcasSlider: React.FC<MarcasSliderProps> =({ marcas})  => {
     
         const sliderContainerStyle = {
             width: '90%',
-            margin: '0 auto'
+            margin: '0 auto',
+            cursor:'pointer'
           };
         
           const sliderImageContainerStyle = {

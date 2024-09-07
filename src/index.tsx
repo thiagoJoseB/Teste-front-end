@@ -26,8 +26,9 @@ import bannerProduto from './img/produto-banner.svg';
 import bannerParceiro from './img/parceiro-banner.svg';
 import marcas from './img/marca.svg';
 import MarcasSlider from './marcas';
-
-
+import FormasPagamento from './img/formas_pagamento.svg';
+import redesSocias from './img/redesSocias.svg';
+import rodaPe from './img/rodape.svg';
 const products = [
   {
     productName: "Iphone 11 PRO MAX BRANCO 1",
@@ -236,7 +237,63 @@ const MyComponent: React.FC = () => {
 
 
       </main>
-      <footer></footer>
+      <footer className='footer'>
+        <div className='footerConteudo'>
+          <div className='sobreNos'>
+          <div>
+            <h2>SOBRE NÓS</h2>
+              <ul>
+                <li>CONHEÇA</li>
+                <li>COMO COMPRAR</li>
+                <li>INDICAÇÃO E DESCONTO</li>
+              </ul>
+              <img src={redesSocias}/>
+          </div>
+
+          </div>
+          <div className="informacoesUteis">
+            <h2>INFORMAÇÕES ÚTEIS</h2>
+              <ul>
+                <li>FALE CONOSCO</li>
+                <li>DÚVIDAS</li>
+                <li>PRAZOS DE ENTREGA</li>
+                <li>FORMAS DE PAGAMENTO</li>
+                <li>POLITICA E PRIVACIDADE</li>
+                <li>TROCAS E DEVOLUÇÕES</li>
+              </ul>
+          </div>
+
+          <div className='formasPagamento'>
+            <h3>FORMAS DE PAGAMENTO</h3>
+            <img src={FormasPagamento}/>
+
+          </div>
+          <div className='caixaFaleConosco'>
+            <p>Cadastre-se e Receba nossas</p>
+            <h3>novidades e promoções</h3>
+            <label>Excepteur sint occaecat cudatat non ent, sunt in</label><br></br>
+            <label style={{marginLeft:'90px'}}>culpa qui officia lorem ipsum</label>
+            <div className='caixaInput'>
+            <input placeholder='Seu e-mail' className='input-novidades'/>
+            <div className='btnOK'><p>ok</p></div>
+            </div>
+
+
+          </div>
+
+        </div>
+        <div className='rodaPe'>
+          <div className='texto'>
+            <p>Copyright © 2019. Todos os direitos reservados. Todas as marcas e suas imagens são de propriedade de seus respectivos donos.  
+            É vedada a reprodução, total ou parcial, de qualquer conteúdo sem expressa autorização.</p>
+          </div>
+
+          <div className='logoRodaPe'>
+          <img src={rodaPe}/>
+          </div>
+        </div>
+
+      </footer>
     </div>
 
 
